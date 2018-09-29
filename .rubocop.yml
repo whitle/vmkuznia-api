@@ -12,6 +12,10 @@ AllCops:
 Metrics/LineLength:
   Max: 120
 
+Style/BlockComments:
+  Exclude:
+    - 'spec/spec_helper.rb'
+
 # Do not enforce documentation rules
 Style/Documentation:
   Enabled: false
