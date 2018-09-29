@@ -1,0 +1,17 @@
+AllCops:
+  DisplayCopNames: true
+  Exclude:
+    - 'db/schema.rb'
+    - 'db/seeds.rb'
+    - 'bin/**/*'
+    - 'log/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+
+# Default 80
+Metrics/LineLength:
+  Max: 120
+
+# Do not enforce documentation rules
+Style/Documentation:
+  Enabled: false
