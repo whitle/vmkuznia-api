@@ -18,6 +18,10 @@ gem 'puma', '~> 3.11'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# ActiveAdmin
+gem 'activeadmin'
+gem 'devise'
+
 # Colorizing text using ANSI escape sequences
 gem 'colorize'
 

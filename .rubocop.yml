@@ -7,6 +7,7 @@ AllCops:
     - 'log/**/*'
     - 'tmp/**/*'
     - 'vendor/**/*'
+    - 'config/initializers/devise.rb'
 
 # Default 80
 Metrics/LineLength:
