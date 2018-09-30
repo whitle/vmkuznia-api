@@ -8,6 +8,7 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
     - 'config/initializers/devise.rb'
+    - 'lib/tasks/auto_annotate_models.rake'
 
 # Default 80
 Metrics/LineLength:
