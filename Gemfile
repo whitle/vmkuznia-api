@@ -25,6 +25,9 @@ gem 'devise'
 # Colorizing text using ANSI escape sequences
 gem 'colorize'
 
+# Template engine for html
+gem 'haml', '~> 5.0', '>= 5.0.4'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
