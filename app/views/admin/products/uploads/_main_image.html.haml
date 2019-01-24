@@ -1,0 +1,6 @@
+:ruby
+  main_image = product.main_image
+
+- if main_image.attached?
+  - if main_image.variable?
+    = link_to image_tag(main_image.variant(resize: '400X400')), main_image, target: '_blank'

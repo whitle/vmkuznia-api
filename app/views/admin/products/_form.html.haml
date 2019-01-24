@@ -1,0 +1,14 @@
+= semantic_form_for [:admin, resource], builder: ActiveAdmin::FormBuilder do |f|
+  = f.inputs do
+    -# = f.input :title
+    = f.input :category
+    = f.input :name
+    = f.input :description
+    = f.input :in_stock
+    = f.input :published
+    = f.input :main_image, as: :file
+    = render 'admin/products/uploads/main_image', product: resource
+    = f.input :uploads, as: :file, input_html: { multiple: true }
+    = f.actions
+
+= render 'admin/products/uploads/uploads', product: resource, edit_mode: true
