@@ -1,0 +1,25 @@
+= semantic_form_for [:admin, @product_image], builder: ActiveAdmin::FormBuilder do |f|
+  = f.inputs do
+    -# = f.input :title
+    = f.input :product
+    = f.input :name
+    = f.input :description
+    = f.input :primary
+    = f.input :published
+    = f.input :shown_in_gallery
+    = f.input :height
+    = f.input :width
+    = f.input :images, as: :file, input_html: { multiple: true }
+    = f.actions
+%h1 Images:
+- @product_image.images.each do |image|
+  - binding.pry
+  = image_tag image
+  -# - if image.variable?
+    = image_tag image.variant(resize: '400x400')
+  -# - elsif upload.previewable?
+    = image_tag image.preview(resize: '400x400')
+
+-# = @product_image.images.attached?
+-# = image_tag url_for(product.images)
+-# = f.input :image, as: :file, input_html: { multiple: true }
