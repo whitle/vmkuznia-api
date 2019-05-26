@@ -20,6 +20,7 @@ gem 'puma', '~> 3.11'
 
 # ActiveAdmin
 gem 'activeadmin'
+gem 'coffee-rails', '~> 5.0'
 gem 'devise'
 
 # Colorizing text using ANSI escape sequences
