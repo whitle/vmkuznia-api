@@ -19,6 +19,7 @@ gem 'puma', '~> 3.11'
 # gem 'bcrypt', '~> 3.1.7'
 
 # ActiveAdmin
+gem 'active_admin_theme', '~> 1.0', '>= 1.0.3'
 gem 'activeadmin'
 gem 'coffee-rails', '~> 5.0'
 gem 'devise'
